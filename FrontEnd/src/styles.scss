@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-snack-bar-container {
+    --mat-mdc-snack-bar-button-color: #ffffff;
+    --mdc-snackbar-supporting-text-color: #ffffff;
+  
+    &.app-notification-fail {
+      --mdc-snackbar-container-color: #f23a2f;
+      --mat-snack-bar-button-color: #fff;
+    }
+  
+    &.app-notification-success {
+      --mdc-snackbar-container-color: #43a446;
+      --mat-snack-bar-button-color: #fff;
+    }
+    &.app-notification-warning {
+        --mdc-snackbar-container-color: gold;
+        --mat-snack-bar-button-color: #000;
+        --mdc-snackbar-supporting-text-color: #000;
+      }
+  }
+  
+.form-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.form-row{
+    flex-grow: 1;
+    margin: 5px;
+}
+
+button{
+margin: 2px;
+}
+
+.app-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #6c3fb5 !important;
+}
+
+.button-position-end{
+  text-align: end;
+  margin: 0vh 2vh 2vh 0vh;
+}

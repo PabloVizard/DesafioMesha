@@ -1,0 +1,23 @@
+.table-and-button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .table-container {
+    flex: 1;
+    margin-right: 16px; 
+  }
+
+  .app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #6c3fb5; 
+  }
+  .title-card{
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  

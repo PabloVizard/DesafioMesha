@@ -1,0 +1,30 @@
+<mat-toolbar>
+    <div>
+        <span>Adicionar Tarefa</span>
+    </div>
+    <div class="close-button">
+        <button mat-icon-button mat-dialog-close class="ml-auto" aria-label="Fechar">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<mat-dialog-content>
+    <form [formGroup]="tarefaForm" (ngSubmit)="salvarTarefa()" *ngIf="tarefaForm"> 
+        <div class="form-container">
+            <mat-form-field class="form-row">
+                <mat-label>Titulo</mat-label>
+                <input matInput placeholder="Titulo" formControlName="titulo" required>
+            </mat-form-field>
+        </div>
+        <div class="form-container">
+            <mat-form-field class="form-row">
+                <mat-label>Descrição</mat-label>
+                <textarea matInput placeholder="Descrição" formControlName="descricao" cdkTextareaAutosize cdkAutosizeMinRows="10" cdkAutosizeMaxRows="10" required></textarea>
+            </mat-form-field>
+        </div>
+        <div class="full-width button-position-end">
+            <button mat-raised-button color="primary" type="submit">Salvar</button>
+        </div>
+    </form>
+</mat-dialog-content>
